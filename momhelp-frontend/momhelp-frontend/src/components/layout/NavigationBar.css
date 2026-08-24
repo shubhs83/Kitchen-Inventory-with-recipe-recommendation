@@ -1,0 +1,271 @@
+/* ================= PERFECT NAVBAR FIX ================= */
+
+/* Main Navbar - Fixed for proper horizontal layout */
+.navbar {
+  backdrop-filter: blur(15px);
+  background: linear-gradient(135deg, 
+    rgba(26, 71, 42, 0.98) 0%,
+    rgba(29, 78, 47, 0.98) 25%,
+    rgba(45, 106, 79, 0.98) 50%,
+    rgba(64, 145, 108, 0.98) 75%,
+    rgba(82, 183, 136, 0.98) 100%
+  ) !important;
+  border-bottom: 2px solid rgba(221, 161, 94, 0.25);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 20px 25px -5px rgba(26, 71, 42, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  min-height: 70px;
+  padding: 0.5rem 0;
+}
+
+/* Container fixes for proper alignment */
+.navbar > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Brand/Logo */
+.navbar-brand {
+  font-weight: 800 !important;
+  letter-spacing: 0.8px;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, 
+    #fefae0 0%,
+    #faedcd 50%,
+    #dda15e 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+  white-space: nowrap;
+}
+
+/* Navbar collapse - FIXED for horizontal layout */
+.navbar-collapse {
+  display: flex !important;
+  flex: 1 !important;
+  justify-content: flex-end !important;
+}
+
+/* Navigation container */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+/* Navigation Links - Compact horizontal design */
+.navbar .nav-link {
+  color: #fefae0 !important;
+  font-weight: 600;
+  padding: 8px 16px !important;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  background: linear-gradient(135deg, 
+    rgba(45, 106, 79, 0.9) 0%,
+    rgba(64, 145, 108, 0.9) 100%
+  ) !important;
+  border: 1.5px solid rgba(254, 250, 224, 0.2) !important;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 2px !important;
+  min-width: auto;
+  flex-shrink: 0;
+}
+
+/* Reduce icon size */
+.navbar .nav-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Hover Effects */
+.navbar .nav-link:hover {
+  background: linear-gradient(135deg, 
+    rgba(82, 183, 136, 0.95) 0%,
+    rgba(116, 198, 157, 0.95) 100%
+  ) !important;
+  color: #081c15 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(82, 183, 136, 0.3);
+  border-color: rgba(254, 250, 224, 0.4) !important;
+}
+
+/* Active State */
+.navbar .nav-link.active {
+  background: linear-gradient(135deg, 
+    #fefae0 0%,
+    #faedcd 100%
+  ) !important;
+  color: #1b4332 !important;
+  border: 2px solid #dda15e !important;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(221, 161, 94, 0.3);
+}
+
+/* Voice Button Container */
+.navbar .ms-2 {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Voice Button */
+.navbar .voice-btn {
+  background: linear-gradient(135deg, 
+    #fefae0 0%,
+    #faedcd 100%
+  ) !important;
+  border: 2px solid #dda15e !important;
+  color: #1b4332 !important;
+  font-weight: 600;
+  border-radius: 12px !important;
+  padding: 6px 14px !important;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar .voice-btn:hover {
+  background: linear-gradient(135deg, 
+    #faedcd 0%,
+    #e9c46a 100%
+  ) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(221, 161, 94, 0.3);
+}
+
+/* User Dropdown - Compact */
+.navbar .dropdown {
+  margin-left: 12px;
+}
+
+.navbar .dropdown-toggle {
+  background: linear-gradient(135deg, 
+    rgba(45, 106, 79, 0.9) 0%,
+    rgba(64, 145, 108, 0.9) 100%
+  ) !important;
+  border: 1.5px solid rgba(254, 250, 224, 0.2) !important;
+  color: #fefae0 !important;
+  border-radius: 12px !important;
+  padding: 6px 14px !important;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+  border: 1.5px solid rgba(221, 161, 94, 0.4) !important;
+  border-radius: 10px;
+  padding: 6px 10px;
+  background: rgba(45, 106, 79, 0.8) !important;
+  order: 2;
+}
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar > .container {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: auto;
+  }
+  
+  .navbar-toggler {
+    order: 2;
+  }
+  
+  .navbar-collapse {
+    order: 3;
+    flex-basis: 100%;
+    margin-top: 10px;
+    background: linear-gradient(135deg, 
+      rgba(26, 71, 42, 0.98) 0%,
+      rgba(45, 106, 79, 0.98) 100%
+    );
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(26, 71, 42, 0.4);
+  }
+  
+  .navbar-nav {
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  
+  .navbar .nav-link {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 16px !important;
+    margin: 2px 0 !important;
+  }
+  
+  .navbar .ms-2,
+  .navbar .dropdown {
+    width: 100%;
+    margin: 8px 0 0 0 !important;
+  }
+  
+  .navbar .voice-btn,
+  .navbar .dropdown-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Fix for Voice Assistant special link */
+.navbar .nav-link[href*="voice-assistant"] {
+  background: linear-gradient(135deg, 
+    #fefae0 0%,
+    #faedcd 100%
+  ) !important;
+  color: #1b4332 !important;
+  border: 2px solid #dda15e !important;
+  font-weight: 700;
+}
+
+/* Ensure all items are properly aligned */
+.navbar-nav.ms-auto {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  overflow: visible !important;
+}
+
+/* Prevent text wrapping */
+.navbar .nav-link span {
+  white-space: nowrap;
+}
+
+/* Remove any flex-grow that might be causing issues */
+.navbar .nav-item {
+  flex-shrink: 0;
+}

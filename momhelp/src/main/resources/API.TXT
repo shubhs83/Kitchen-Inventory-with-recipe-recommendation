@@ -1,0 +1,136 @@
+# VEGETABLE MANAGEMENT APIs
+
+## 1. Add Vegetable
+POST http://localhost:8080/api/vegetables/add
+Content-Type: application/json
+{"name":"Spinach","weight":1.0,"unit":"Kg","addedDate":"2024-03-10","useBeforeDate":"2024-03-17"}
+
+## 2. Update Vegetable
+PUT http://localhost:8080/api/vegetables/update/1
+Content-Type: application/json
+{"name":"Spinach","weight":0.8,"unit":"Kg","addedDate":"2024-03-10","useBeforeDate":"2024-03-17"}
+
+## 3. Delete Vegetable
+DELETE http://localhost:8080/api/vegetables/delete/1
+
+## 4. Get Vegetable by ID
+GET http://localhost:8080/api/vegetables/1
+
+## 5. Get All Vegetables
+GET http://localhost:8080/api/vegetables/all
+
+## 6. Search Vegetables by Name
+GET http://localhost:8080/api/vegetables/search?name=spinach
+
+## 7. Get Available Vegetables (Not Expired)
+GET http://localhost:8080/api/vegetables/available
+
+## 8. Get Spoiled Vegetables
+GET http://localhost:8080/api/vegetables/spoiled
+
+## 9. Mark Vegetable as Spoiled
+PUT http://localhost:8080/api/vegetables/mark-spoiled/1
+
+## 10. Remove Spoiled Vegetable
+DELETE http://localhost:8080/api/vegetables/remove-spoiled/1
+
+
+# CHOOSE ME MODULE APIs
+
+## 11. Step 1: Get Available Vegetables for Choose Me
+GET http://localhost:8080/api/choose-me/available-vegetables
+
+## 12. Step 2: Get Dishes for a Vegetable
+GET http://localhost:8080/api/choose-me/dishes/1
+
+## 13. Step 3: Get Recipe for a Dish
+GET http://localhost:8080/api/choose-me/recipe/1
+
+## 14. Complete Vegetable Details with Dishes
+GET http://localhost:8080/api/choose-me/vegetable-details/1
+
+
+# DISH MANAGEMENT APIs
+
+## 15. Get All Dishes
+GET http://localhost:8080/api/dishes/all
+
+## 16. Get Dish by ID
+GET http://localhost:8080/api/dishes/1
+
+## 17. Get Dishes by Vegetable ID
+GET http://localhost:8080/api/dishes/by-vegetable/1
+
+## 18. Get Dishes by Vegetable Name
+GET http://localhost:8080/api/dishes/by-vegetable-name?name=spinach
+
+## 19. Get Dishes for Available Vegetables
+GET http://localhost:8080/api/dishes/available
+
+## 20. Get Available Dishes for Specific Vegetable
+GET http://localhost:8080/api/dishes/available/1
+
+## 21. Get Vegetables That Have Dishes
+GET http://localhost:8080/api/dishes/vegetables-with-dishes
+
+
+# RECIPE MANAGEMENT APIs
+
+## 22. Get Recipe by Dish ID
+GET http://localhost:8080/api/recipes/by-dish/1
+
+## 23. Get Recipe by Recipe ID
+GET http://localhost:8080/api/recipes/1
+
+
+# TEST CURL COMMANDS
+
+## Test Choose Me Flow:
+curl -X GET "http://localhost:8080/api/choose-me/available-vegetables"
+curl -X GET "http://localhost:8080/api/choose-me/dishes/1"
+curl -X GET "http://localhost:8080/api/choose-me/recipe/1"
+
+## Test Dish APIs:
+curl -X GET "http://localhost:8080/api/dishes/all"
+curl -X GET "http://localhost:8080/api/dishes/available/1"
+
+## Test Recipe APIs:
+curl -X GET "http://localhost:8080/api/recipes/by-dish/1"
+curl -X GET "http://localhost:8080/api/recipes/1"
+
+
+# FRONTEND API CALLS (React Examples)
+
+// Fetch available vegetables
+fetch('http://localhost:8080/api/choose-me/available-vegetables')
+
+// Fetch dishes for vegetable ID 1
+fetch('http://localhost:8080/api/choose-me/dishes/1')
+
+// Fetch recipe for dish ID 1
+fetch('http://localhost:8080/api/choose-me/recipe/1')
+
+
+# POSTMAN COLLECTION
+
+## Import this JSON into Postman:
+{
+  "info": {"name": "May I Help You Mom API"},
+  "item": [
+    {
+      "name": "Choose Me Flow",
+      "item": [
+        {"name": "Get Available Vegetables", "request": {"method": "GET", "url": "http://localhost:8080/api/choose-me/available-vegetables"}},
+        {"name": "Get Dishes for Vegetable", "request": {"method": "GET", "url": "http://localhost:8080/api/choose-me/dishes/1"}},
+        {"name": "Get Recipe for Dish", "request": {"method": "GET", "url": "http://localhost:8080/api/choose-me/recipe/1"}}
+      ]
+    },
+    {
+      "name": "Vegetable Management",
+      "item": [
+        {"name": "Add Vegetable", "request": {"method": "POST", "url": "http://localhost:8080/api/vegetables/add", "body": {"mode": "raw", "raw": "{\"name\":\"Spinach\",\"weight\":1.0,\"unit\":\"Kg\",\"addedDate\":\"2024-03-10\",\"useBeforeDate\":\"2024-03-17\"}"}}},
+        {"name": "Get All Vegetables", "request": {"method": "GET", "url": "http://localhost:8080/api/vegetables/all"}}
+      ]
+    }
+  ]
+}

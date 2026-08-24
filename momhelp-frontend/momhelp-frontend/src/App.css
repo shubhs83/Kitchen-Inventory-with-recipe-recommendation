@@ -1,0 +1,143 @@
+/* Choose Me Module Styles */
+.hover-shadow {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.hover-lift {
+  transition: transform 0.2s;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+}
+
+.recipe-instructions {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.step-indicator .badge {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Print styles for recipe */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .recipe-instructions {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* Custom card borders */
+.border-success {
+  border-color: #28a745 !important;
+}
+
+.border-warning {
+  border-color: #ffc107 !important;
+}
+
+.border-primary {
+  border-color: #007bff !important;
+}
+
+/* Voice Assistant Styles */
+.voice-button-container {
+  position: relative;
+}
+
+.voice-button {
+  transition: all 0.3s ease;
+}
+
+.voice-button:hover {
+  transform: scale(1.05);
+}
+
+.voice-interim-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.listening {
+  animation: pulse 1.5s infinite;
+}
+
+/* Voice button in navbar */
+.navbar .voice-button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar .voice-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+
+/* Marathi Font Support */
+.marathi-text {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Hover effect for cards */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Cursor pointer for clickable breadcrumbs */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-pointer:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "मी तुमची मदत करू शकतो का...आई!",
+    "tagline": "तुमची स्वयंपाकघर, आमची नवकल्पना, तुमचा आनंद.",
+    "description": "तुमची जेवण योजना सोपी करा आणि अन्नाची नासाडी कमी करा"
+  },
+  "nav": {
+    "dashboard": "डॅशबोर्ड",
+    "manageVegetables": "भाज्या व्यवस्थापित करा",
+    "viewVegetables": "भाज्या पहा",
+    "spoiledVegetables": "खराब झालेल्या भाज्या"
+  },
+  "dashboard": {
+    "title": "मी तुमची मदत करू शकतो का...आई!",
+    "insideFreeze": {
+      "title": "फ्रीझरमध्ये",
+      "description": "भाज्या जोडा, अद्ययावत करा, हटवा"
+    },
+    "viewVegetables": {
+      "title": "भाज्या पहा",
+      "description": "सर्व उपलब्ध भाज्या पहा"
+    },
+    "chooseMe": {
+      "title": "मला निवडा",
+      "description": "भाज्यांवर आधारित पाककृती सूचना"
+    },
+    "aiRecipeGenerator": {
+      "title": "AI पाककृती जनरेटर",
+      "description": "AI चा वापर करून अमर्याद पाककृती तयार करा"
+    },
+    "myAiRecipes": {
+      "title": "माझ्या AI पाककृती",
+      "description": "AI ने तयार केलेल्या सर्व पाककृती पहा"
+    },
+    "autoSuggest": {
+      "title": "ऑटो सूचना",
+      "description": "विविध पदार्थांसाठी जेवण सूचना"
+    },
+    "letsUse": {
+      "title": "चला वापरूया",
+      "description": "वापरानंतर भाज्यांचे प्रमाण अद्ययावत करा"
+    },
+    "spoiledVegetables": {
+      "title": "खराब भाज्या",
+      "description": "कालबाह्य झालेल्या भाज्या पहा आणि हटवा"
+    },
+    "monthlyReports": {
+      "title": "मासिक अहवाल",
+      "description": "वापर इतिहास आणि विश्लेषण पहा"
+    },
+    "seasonalDishes": {
+      "title": "हंगामी पदार्थ",
+      "description": "हंगामावर आधारित पाककृती सूचना"
+    },
+    "getStarted": "सुरू करा",
+    "tryToday": "आजच प्रयत्न करा",
+    "startMessage": "फ्रीझर विभागात तुमच्या भाज्यांचे व्यवस्थापन सुरू करा"
+  },
+  "vegetables": {
+    "manage": "भाज्या व्यवस्थापित करा",
+    "add": "भाजी जोडा",
+    "update": "भाजी अद्ययावत करा",
+    "delete": "भाजी हटवा",
+    "search": "भाज्या शोधा",
+    "searchPlaceholder": "नावाने शोधा...",
+    "name": "भाजीचे नाव",
+    "weight": "वजन",
+    "unit": "एकक",
+    "addedOn": "जोडलेली तारीख",
+    "useBefore": "वापरण्याची अंतिम तारीख",
+    "status": "स्थिती",
+    "actions": "क्रिया",
+    "fresh": "ताजी",
+    "spoiled": "खराब",
+    "noVegetables": "कोणत्याही भाज्या सापडल्या नाहीत",
+    "addSuccess": "भाजी यशस्वीपणे जोडली!",
+    "updateSuccess": "भाजी यशस्वीपणे अद्ययावत केली!",
+    "deleteSuccess": "भाजी यशस्वीपणे हटवली!",
+    "deleteConfirm": "तुम्हाला ही भाजी नक्की हटवायची आहे का?"
+  },
+  "aiRecipe": {
+    "generator": "AI पाककृती जनरेटर",
+    "subtitle": "तुमच्या भाज्यांवर आधारित AI वापरून अमर्याद पाककृती तयार करा",
+    "poweredBy": "AI द्वारे समर्थित",
+    "howItWorks": "हे कसे कार्य करते:",
+    "description": "तुमच्या इन्व्हेंटरीमधून भाज्या निवडा, जेवणाचा प्रकार आणि सर्व्हिंग्स निवडा, आणि AI ला तुमच्यासाठी खास पाककृती तयार करू द्या!",
+    "languageSupport": "इंग्रजी, हिंदी आणि मराठी भाषांना समर्थन",
+    "selectVegetables": "भाज्या निवडा",
+    "vegetablesSelected": "निवडलेल्या",
+    "searchPlaceholder": "इन्व्हेंटरीमधून भाज्या शोधा आणि निवडा...",
+    "selectInfo": "उपलब्ध साठ्यातून 1-10 भाज्या निवडा",
+    "mealType": "जेवणाचा प्रकार",
+    "breakfast": "नाश्ता",
+    "lunchDinner": "दुपारचे / रात्रीचे जेवण",
+    "dessert": "मिष्टान्न",
+    "servings": "सर्व्हिंग्स",
+    "servingsInfo": "व्यक्तींची संख्या (1-20)",
+    "language": "भाषा",
+    "english": "इंग्रजी",
+    "hindi": "हिंदी",
+    "telugu": "तेलुगू",
+    "backToDashboard": "डॅशबोर्डवर परत जा",
+    "reset": "रीसेट करा",
+    "generate": "AI सह पाककृती तयार करा",
+    "generating": "पाककृती तयार होत आहे...",
+    "aiCreating": "AI तुमची पाककृती तयार करत आहे...",
+    "waitTime": "यासाठी 10-20 सेकंद लागू शकतात",
+    "success": "पाककृती यशस्वीपणे तयार झाली!",
+    "successMsg": "तुमची AI-आधारित पाककृती तयार आहे",
+    "addToFavorites": "आवडीमध्ये जोडा",
+    "favorited": "आवडती",
+    "prepTime": "तयारीचा वेळ",
+    "cookTime": "शिजवण्याचा वेळ",
+    "totalTime": "एकूण वेळ",
+    "ingredients": "साहित्य",
+    "instructions": "पाककृती सूचना",
+    "nutritionalInfo": "पोषण माहिती",
+    "perServing": "प्रति सर्व्हिंग",
+    "generateAnother": "आणखी एक पाककृती तयार करा",
+    "printRecipe": "पाककृती छापा",
+    "myRecipes": "माझ्या AI पाककृती",
+    "generateNew": "नवी पाककृती तयार करा",
+    "noRecipes": "अजून कोणतीही पाककृती नाही",
+    "noRecipesMsg": "तुमच्या भाज्यांपासून AI पाककृती तयार करायला सुरुवात करा!",
+    "generateFirst": "तुमची पहिली पाककृती तयार करा",
+    "viewRecipe": "पाककृती पहा",
+    "deleteRecipe": "पाककृती हटवा",
+    "vegetablesUsed": "वापरलेल्या भाज्या"
+  },
+  "common": {
+    "back": "मागे",
+    "open": "उघडा",
+    "close": "बंद करा",
+    "save": "जतन करा",
+    "cancel": "रद्द करा",
+    "delete": "हटवा",
+    "edit": "संपादित करा",
+    "view": "पहा",
+    "add": "जोडा",
+    "update": "अद्ययावत करा",
+    "search": "शोधा",
+    "loading": "लोड होत आहे...",
+    "error": "त्रुटी",
+    "success": "यश",
+    "warning": "इशारा",
+    "info": "माहिती",
+    "confirm": "पुष्टी करा",
+    "yes": "होय",
+    "no": "नाही",
+    "ok": "ठीक आहे",
+    "showing": "दाखवत आहे",
+    "of": "पैकी",
+    "required": "*",
+    "optional": "(ऐच्छिक)"
+  },
+  "buttons": {
+    "getStarted": "सुरू करा",
+    "learnMore": "अधिक जाणून घ्या",
+    "tryNow": "आत्ताच वापरून पहा",
+    "continue": "सुरू ठेवा",
+    "submit": "सबमिट करा",
+    "refresh": "रिफ्रेश करा",
+    "reload": "पुन्हा लोड करा",
+    "download": "डाउनलोड",
+    "upload": "अपलोड",
+    "print": "प्रिंट",
+    "share": "शेअर करा"
+  }
+}

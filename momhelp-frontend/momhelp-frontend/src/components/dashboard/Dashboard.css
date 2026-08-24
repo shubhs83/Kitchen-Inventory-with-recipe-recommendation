@@ -1,0 +1,195 @@
+/* ================= PREMIUM LIGHT DASHBOARD ================= */
+
+.dashboard-bg {
+  background: linear-gradient(180deg, #f4f8f6, #e9f1ed);
+  min-height: 100vh;
+  padding-top: 0.2rem;     /* Further reduced */
+  padding-bottom: 1rem;    /* Reduced */
+}
+
+/* ================= HERO ================= */
+
+.dashboard-hero {
+  background: linear-gradient(135deg, #00c853, #00e676);
+  color: #02150b;
+  padding: 0.8rem 1.2rem; /* Further reduced */
+  border-radius: 14px;     /* Reduced */
+  box-shadow: 0 8px 20px rgba(0, 200, 120, 0.2); /* Reduced */
+  margin-bottom: 1.2rem;   /* Reduced */
+
+  margin-top: 0.3rem;      /* Further reduced */
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dashboard-hero h1 {
+  font-size: 1.8rem;       /* Reduced */
+  font-weight: 800;
+  margin-bottom: 0.1rem;   /* Reduced */
+  letter-spacing: 0.3px;   /* Reduced */
+}
+
+.dashboard-hero p {
+  font-size: 0.8rem;       /* Reduced */
+  margin-bottom: 0.05rem;  /* Reduced */
+  line-height: 1.2;        /* Tighter */
+}
+
+/* ================= MAIN SECTION CARDS ================= */
+
+.main-section-card {
+  border-radius: 16px !important; /* Reduced */
+  border: 1px solid rgba(0, 200, 120, 0.25) !important;
+  background: linear-gradient(180deg, #ffffff, #f8fcfa);
+  color: #0f172a;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Reduced */
+  transition: all 0.3s ease;                 /* Faster */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  min-height: 140px;       /* Reduced */
+  padding: 0.6rem 0.6rem;  /* Further reduced */
+}
+
+.main-section-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(0, 200, 120, 0.06),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.3s;        /* Faster */
+}
+
+.main-section-card:hover::before {
+  opacity: 1;
+}
+
+.main-section-card:hover {
+  transform: translateY(-4px) scale(1.01); /* Reduced */
+  box-shadow:
+    0 14px 30px rgba(0, 200, 120, 0.2),  /* Reduced */
+    0 0 8px rgba(0, 200, 120, 0.15);     /* Reduced */
+}
+
+/* ================= ICONS ================= */
+
+.section-icon {
+  font-size: 2.2rem;        /* Reduced */
+  margin-bottom: 0.3rem;    /* Reduced */
+  filter: drop-shadow(0 1px 3px rgba(0, 200, 120, 0.2)); /* Reduced */
+}
+
+/* ================= CARD TEXT ================= */
+
+.main-section-card .card-title {
+  font-size: 1rem;         /* Reduced */
+  margin-bottom: 0.2rem;   /* Reduced */
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.main-section-card .card-text {
+  font-size: 0.78rem;      /* Reduced */
+  line-height: 1.25;       /* Tighter */
+  opacity: 0.85;
+  color: #334155;
+}
+
+/* ================= GRID SPACING ================= */
+
+.row.g-3 > [class*="col"],
+.row.g-4 > [class*="col"] {
+  padding-top: 0.4rem;     /* Reduced */
+  padding-bottom: 0.4rem;  /* Reduced */
+}
+
+/* ================= SUB MODULE CARDS ================= */
+
+.sub-card {
+  border-radius: 14px !important;  /* Reduced */
+  border: 1px solid rgba(0, 200, 120, 0.22) !important;
+  background: linear-gradient(180deg, #ffffff, #f8fcfa);
+  color: #0f172a;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Reduced */
+  transition: all 0.25s ease;                  /* Faster */
+  padding: 0.6rem;         /* Further reduced */
+}
+
+.sub-card:hover {
+  transform: translateY(-3px) scale(1.01); /* Reduced */
+  box-shadow:
+    0 12px 25px rgba(0, 200, 120, 0.2),   /* Reduced */
+    0 0 6px rgba(0, 200, 120, 0.12);      /* Reduced */
+}
+
+/* ================= BACK BUTTON ================= */
+
+.back-btn {
+  border-radius: 35px !important;  /* Reduced */
+  padding: 0.4rem 1.2rem !important; /* Reduced */
+  font-weight: 700;
+  background: linear-gradient(135deg, #00c853, #00e676) !important;
+  border: none !important;
+  color: #02150b !important;
+  box-shadow: 0 4px 12px rgba(0, 200, 120, 0.25); /* Reduced */
+  margin-bottom: 1rem;      /* Reduced */
+}
+
+/* ================= ANIMATIONS ================= */
+
+.fade-in {
+  animation: fadeInUp 0.5s cubic-bezier(.2,.8,.2,1); /* Faster */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px); /* Reduced */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE TUNING ================= */
+
+@media (max-height: 820px) {
+  .dashboard-bg {
+    padding-top: 0.1rem;   /* Reduced */
+  }
+  
+  .dashboard-hero {
+    padding: 0.6rem 1rem;  /* Reduced */
+    margin-top: 0.2rem;    /* Reduced */
+  }
+
+  .main-section-card {
+    min-height: 130px;     /* Reduced */
+    padding: 0.5rem 0.5rem; /* Reduced */
+  }
+
+  .section-icon {
+    font-size: 2rem;       /* Reduced */
+  }
+  
+  .main-section-card .card-title {
+    font-size: 0.95rem;    /* Reduced */
+  }
+  
+  .main-section-card .card-text {
+    font-size: 0.75rem;    /* Reduced */
+  }
+}
+
+@media (min-width: 1600px) {
+  .main-section-card {
+    min-height: 150px;     /* Reduced from 180px */
+  }
+}
